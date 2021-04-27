@@ -9,7 +9,7 @@ import UIKit
 
 class PostDetailsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    private var postDetailsViewModel = PostDetailsViewModel()
+    private var postDetailsViewModel : PostDetailsViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()

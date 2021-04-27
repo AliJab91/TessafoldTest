@@ -126,8 +126,6 @@
 		4E03A1A62635893A000B3E5A = {
 			isa = PBXGroup;
 			children = (
-				4E03A27A26380040000B3E5A /* PostDetailsTest.swift */,
-				4E03A2752637F424000B3E5A /* PostsTest.swift */,
 				4E03A1B12635893A000B3E5A /* TessafoldTest */,
 				4E03A1C82635893D000B3E5A /* TessafoldTestTests */,
 				4E03A1D32635893D000B3E5A /* TessafoldTestUITests */,
@@ -168,6 +166,8 @@
 		4E03A1C82635893D000B3E5A /* TessafoldTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				4E03A27A26380040000B3E5A /* PostDetailsTest.swift */,
+				4E03A2752637F424000B3E5A /* PostsTest.swift */,
 				4E03A1C92635893D000B3E5A /* TessafoldTestTests.swift */,
 				4E03A1CB2635893D000B3E5A /* Info.plist */,
 			);

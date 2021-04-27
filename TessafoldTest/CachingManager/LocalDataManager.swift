@@ -10,6 +10,7 @@ import UIKit
 public class LocalDataManager {
     private let usersKey = "users_key"
     private let postKey = "post_key"
+    private let commentsKey = "comments_key"
     private let decoder = JSONDecoder()
     private let encoder = JSONEncoder()
     private let userDefaults = UserDefaults.standard
@@ -31,6 +32,19 @@ public class LocalDataManager {
         return users
     }
     
+    public func saveComments(comments: [Comment]) throws {
+            let data = try encoder.encode(comments)
+            userDefaults.set(data, forKey: commentsKey)
+        }
+        
+        public func loadComments() throws ->[Comment] {
+            guard let data = userDefaults.data(forKey: commentsKey), let comments = try? decoder.decode([Comment].self, from: data) else {
+                throw Error.usersNotFound
+            }
+            return comments
+        }
+
+    
     public func loadPosts() throws -> [Posts] {
         guard let data = userDefaults.data(forKey: postKey), let posts = try? decoder.decode([Posts].self, from: data) else {
             throw Error.commentsNotFound
@@ -39,7 +53,8 @@ public class LocalDataManager {
     }
     
     public enum Error: String, Swift.Error {
-        case commentsNotFound
+        case PostsNotFound
         case usersNotFound
+        case commentsNotFound
     }
 }

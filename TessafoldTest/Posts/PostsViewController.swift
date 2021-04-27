@@ -8,12 +8,11 @@
 import UIKit
 import ReactiveSwift
 class PostsViewController: UIViewController {
-    private var postsViewModel: PostsViewModel!
+    private var postsViewModel = PostsViewModel()
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        postsViewModel = PostsViewModel()
         setUI()
     }
     
