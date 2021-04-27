@@ -3,18 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4E03A1B32635893A000B3E5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A1B22635893A000B3E5A /* AppDelegate.swift */; };
 		4E03A1B52635893A000B3E5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A1B42635893A000B3E5A /* SceneDelegate.swift */; };
-		4E03A1B72635893A000B3E5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A1B62635893A000B3E5A /* ViewController.swift */; };
-		4E03A1BA2635893A000B3E5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E03A1B82635893A000B3E5A /* Main.storyboard */; };
 		4E03A1BC2635893C000B3E5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E03A1BB2635893C000B3E5A /* Assets.xcassets */; };
 		4E03A1BF2635893C000B3E5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E03A1BD2635893C000B3E5A /* LaunchScreen.storyboard */; };
 		4E03A1CA2635893D000B3E5A /* TessafoldTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A1C92635893D000B3E5A /* TessafoldTestTests.swift */; };
 		4E03A1D52635893D000B3E5A /* TessafoldTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A1D42635893D000B3E5A /* TessafoldTestUITests.swift */; };
+		4E03A1F226358A20000B3E5A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A1F126358A20000B3E5A /* Models.swift */; };
+		4E03A1F826359E23000B3E5A /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A1F726359E23000B3E5A /* ServiceManager.swift */; };
+		4E03A2012635AE5C000B3E5A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A2002635AE5C000B3E5A /* Extensions.swift */; };
+		4E03A20C2635AEC0000B3E5A /* Posts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E03A20B2635AEC0000B3E5A /* Posts.storyboard */; };
+		4E03A2112635AEEE000B3E5A /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A2102635AEEE000B3E5A /* PostsViewController.swift */; };
+		4E03A2172635AF06000B3E5A /* PostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A2152635AF06000B3E5A /* PostsCell.swift */; };
+		4E03A2182635AF06000B3E5A /* PostsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E03A2162635AF06000B3E5A /* PostsCell.xib */; };
+		4E03A21D2635AF15000B3E5A /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A21C2635AF15000B3E5A /* PostViewModel.swift */; };
+		4E03A2262635B071000B3E5A /* NetworkServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A2252635B071000B3E5A /* NetworkServiceManager.swift */; };
+		4E03A22F2635F72E000B3E5A /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A22E2635F72E000B3E5A /* PostDetailsViewController.swift */; };
+		4E03A2412636090B000B3E5A /* PostDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A2402636090B000B3E5A /* PostDetailsViewModel.swift */; };
+		4E03A24B263733E8000B3E5A /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A249263733E8000B3E5A /* CommentCell.swift */; };
+		4E03A24C263733E8000B3E5A /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E03A24A263733E8000B3E5A /* CommentCell.xib */; };
+		4E03A2562637416C000B3E5A /* GeneralInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A2542637416C000B3E5A /* GeneralInformationCell.swift */; };
+		4E03A2572637416C000B3E5A /* GeneralInformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E03A2552637416C000B3E5A /* GeneralInformationCell.xib */; };
+		4E03A26326374C79000B3E5A /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A26226374C79000B3E5A /* LocalDataManager.swift */; };
+		4E03A2762637F424000B3E5A /* PostsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A2752637F424000B3E5A /* PostsTest.swift */; };
+		4E03A27B26380040000B3E5A /* PostDetailsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E03A27A26380040000B3E5A /* PostDetailsTest.swift */; };
+		74761C52706688D05D2406B1 /* Pods_TessafoldTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A0FE5FBE2BF94A31360E9C /* Pods_TessafoldTest.framework */; };
+		B897F13F833DE7179871AC41 /* Pods_TessafoldTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368AA4CB4C68B22DCD8D5432 /* Pods_TessafoldTestTests.framework */; };
+		E7CB944E01B7E303BBC04EBA /* Pods_TessafoldTest_TessafoldTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2453145E5D7F100F25D23D36 /* Pods_TessafoldTest_TessafoldTestUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09CBCC8419FD0AF8A2E24742 /* Pods-TessafoldTest-TessafoldTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TessafoldTest-TessafoldTestUITests.release.xcconfig"; path = "Target Support Files/Pods-TessafoldTest-TessafoldTestUITests/Pods-TessafoldTest-TessafoldTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		230289BAA51FDA959C233D97 /* Pods-TessafoldTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TessafoldTestTests.debug.xcconfig"; path = "Target Support Files/Pods-TessafoldTestTests/Pods-TessafoldTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2453145E5D7F100F25D23D36 /* Pods_TessafoldTest_TessafoldTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TessafoldTest_TessafoldTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		368AA4CB4C68B22DCD8D5432 /* Pods_TessafoldTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TessafoldTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E03A1AF2635893A000B3E5A /* TessafoldTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TessafoldTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E03A1B22635893A000B3E5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E03A1B42635893A000B3E5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4E03A1B62635893A000B3E5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4E03A1B92635893A000B3E5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E03A1BB2635893C000B3E5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E03A1BE2635893C000B3E5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E03A1C02635893C000B3E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +70,29 @@
 		4E03A1D02635893D000B3E5A /* TessafoldTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TessafoldTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E03A1D42635893D000B3E5A /* TessafoldTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TessafoldTestUITests.swift; sourceTree = "<group>"; };
 		4E03A1D62635893D000B3E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E03A1F126358A20000B3E5A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		4E03A1F726359E23000B3E5A /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		4E03A2002635AE5C000B3E5A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4E03A20B2635AEC0000B3E5A /* Posts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Posts.storyboard; sourceTree = "<group>"; };
+		4E03A2102635AEEE000B3E5A /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		4E03A2152635AF06000B3E5A /* PostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCell.swift; sourceTree = "<group>"; };
+		4E03A2162635AF06000B3E5A /* PostsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsCell.xib; sourceTree = "<group>"; };
+		4E03A21C2635AF15000B3E5A /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		4E03A2252635B071000B3E5A /* NetworkServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceManager.swift; sourceTree = "<group>"; };
+		4E03A22E2635F72E000B3E5A /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
+		4E03A2402636090B000B3E5A /* PostDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModel.swift; sourceTree = "<group>"; };
+		4E03A249263733E8000B3E5A /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		4E03A24A263733E8000B3E5A /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		4E03A2542637416C000B3E5A /* GeneralInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInformationCell.swift; sourceTree = "<group>"; };
+		4E03A2552637416C000B3E5A /* GeneralInformationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralInformationCell.xib; sourceTree = "<group>"; };
+		4E03A26226374C79000B3E5A /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		4E03A2752637F424000B3E5A /* PostsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTest.swift; sourceTree = "<group>"; };
+		4E03A27A26380040000B3E5A /* PostDetailsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsTest.swift; sourceTree = "<group>"; };
+		52281F849DA30CE0C01A08F0 /* Pods-TessafoldTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TessafoldTest.debug.xcconfig"; path = "Target Support Files/Pods-TessafoldTest/Pods-TessafoldTest.debug.xcconfig"; sourceTree = "<group>"; };
+		63CE2751FDEAFB20664CDBDF /* Pods-TessafoldTest-TessafoldTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TessafoldTest-TessafoldTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-TessafoldTest-TessafoldTestUITests/Pods-TessafoldTest-TessafoldTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8595840A3C2CD5FF4BA434E9 /* Pods-TessafoldTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TessafoldTest.release.xcconfig"; path = "Target Support Files/Pods-TessafoldTest/Pods-TessafoldTest.release.xcconfig"; sourceTree = "<group>"; };
+		91A0FE5FBE2BF94A31360E9C /* Pods_TessafoldTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TessafoldTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		990393DE8202BB836379F891 /* Pods-TessafoldTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TessafoldTestTests.release.xcconfig"; path = "Target Support Files/Pods-TessafoldTestTests/Pods-TessafoldTestTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74761C52706688D05D2406B1 /* Pods_TessafoldTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B897F13F833DE7179871AC41 /* Pods_TessafoldTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7CB944E01B7E303BBC04EBA /* Pods_TessafoldTest_TessafoldTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +126,14 @@
 		4E03A1A62635893A000B3E5A = {
 			isa = PBXGroup;
 			children = (
+				4E03A27A26380040000B3E5A /* PostDetailsTest.swift */,
+				4E03A2752637F424000B3E5A /* PostsTest.swift */,
 				4E03A1B12635893A000B3E5A /* TessafoldTest */,
 				4E03A1C82635893D000B3E5A /* TessafoldTestTests */,
 				4E03A1D32635893D000B3E5A /* TessafoldTestUITests */,
 				4E03A1B02635893A000B3E5A /* Products */,
+				F607BA89F70A1846AF806434 /* Pods */,
+				537AB089E2DEE0BF27488F41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +150,17 @@
 		4E03A1B12635893A000B3E5A /* TessafoldTest */ = {
 			isa = PBXGroup;
 			children = (
+				4E03A26126374B83000B3E5A /* CachingManager */,
 				4E03A1B22635893A000B3E5A /* AppDelegate.swift */,
-				4E03A1B42635893A000B3E5A /* SceneDelegate.swift */,
-				4E03A1B62635893A000B3E5A /* ViewController.swift */,
-				4E03A1B82635893A000B3E5A /* Main.storyboard */,
 				4E03A1BB2635893C000B3E5A /* Assets.xcassets */,
-				4E03A1BD2635893C000B3E5A /* LaunchScreen.storyboard */,
+				4E03A1FF2635AE4C000B3E5A /* Extensions */,
 				4E03A1C02635893C000B3E5A /* Info.plist */,
+				4E03A1BD2635893C000B3E5A /* LaunchScreen.storyboard */,
+				4E03A1E72635897D000B3E5A /* Models */,
+				4E03A23F263608F3000B3E5A /* PostDetails */,
+				4E03A1E52635895A000B3E5A /* Posts */,
+				4E03A1B42635893A000B3E5A /* SceneDelegate.swift */,
+				4E03A1F626359D94000B3E5A /* ServiceManager */,
 			);
 			path = TessafoldTest;
 			sourceTree = "<group>";
@@ -128,6 +183,111 @@
 			path = TessafoldTestUITests;
 			sourceTree = "<group>";
 		};
+		4E03A1E52635895A000B3E5A /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				4E03A2242635AF80000B3E5A /* PostsCell */,
+				4E03A20B2635AEC0000B3E5A /* Posts.storyboard */,
+				4E03A2102635AEEE000B3E5A /* PostsViewController.swift */,
+				4E03A21C2635AF15000B3E5A /* PostViewModel.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		4E03A1E72635897D000B3E5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E03A1F126358A20000B3E5A /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4E03A1F626359D94000B3E5A /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				4E03A1F726359E23000B3E5A /* ServiceManager.swift */,
+				4E03A2252635B071000B3E5A /* NetworkServiceManager.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		4E03A1FF2635AE4C000B3E5A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E03A2002635AE5C000B3E5A /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4E03A2242635AF80000B3E5A /* PostsCell */ = {
+			isa = PBXGroup;
+			children = (
+				4E03A2152635AF06000B3E5A /* PostsCell.swift */,
+				4E03A2162635AF06000B3E5A /* PostsCell.xib */,
+			);
+			path = PostsCell;
+			sourceTree = "<group>";
+		};
+		4E03A23F263608F3000B3E5A /* PostDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4E03A25326374151000B3E5A /* GeneralInformationCell */,
+				4E03A248263733D1000B3E5A /* CommentCell */,
+				4E03A22E2635F72E000B3E5A /* PostDetailsViewController.swift */,
+				4E03A2402636090B000B3E5A /* PostDetailsViewModel.swift */,
+			);
+			path = PostDetails;
+			sourceTree = "<group>";
+		};
+		4E03A248263733D1000B3E5A /* CommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				4E03A249263733E8000B3E5A /* CommentCell.swift */,
+				4E03A24A263733E8000B3E5A /* CommentCell.xib */,
+			);
+			path = CommentCell;
+			sourceTree = "<group>";
+		};
+		4E03A25326374151000B3E5A /* GeneralInformationCell */ = {
+			isa = PBXGroup;
+			children = (
+				4E03A2542637416C000B3E5A /* GeneralInformationCell.swift */,
+				4E03A2552637416C000B3E5A /* GeneralInformationCell.xib */,
+			);
+			path = GeneralInformationCell;
+			sourceTree = "<group>";
+		};
+		4E03A26126374B83000B3E5A /* CachingManager */ = {
+			isa = PBXGroup;
+			children = (
+				4E03A26226374C79000B3E5A /* LocalDataManager.swift */,
+			);
+			path = CachingManager;
+			sourceTree = "<group>";
+		};
+		537AB089E2DEE0BF27488F41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91A0FE5FBE2BF94A31360E9C /* Pods_TessafoldTest.framework */,
+				2453145E5D7F100F25D23D36 /* Pods_TessafoldTest_TessafoldTestUITests.framework */,
+				368AA4CB4C68B22DCD8D5432 /* Pods_TessafoldTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F607BA89F70A1846AF806434 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52281F849DA30CE0C01A08F0 /* Pods-TessafoldTest.debug.xcconfig */,
+				8595840A3C2CD5FF4BA434E9 /* Pods-TessafoldTest.release.xcconfig */,
+				63CE2751FDEAFB20664CDBDF /* Pods-TessafoldTest-TessafoldTestUITests.debug.xcconfig */,
+				09CBCC8419FD0AF8A2E24742 /* Pods-TessafoldTest-TessafoldTestUITests.release.xcconfig */,
+				230289BAA51FDA959C233D97 /* Pods-TessafoldTestTests.debug.xcconfig */,
+				990393DE8202BB836379F891 /* Pods-TessafoldTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +295,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E03A1D92635893D000B3E5A /* Build configuration list for PBXNativeTarget "TessafoldTest" */;
 			buildPhases = (
+				F932CD0336EBA6D77E873CE1 /* [CP] Check Pods Manifest.lock */,
 				4E03A1AB2635893A000B3E5A /* Sources */,
 				4E03A1AC2635893A000B3E5A /* Frameworks */,
 				4E03A1AD2635893A000B3E5A /* Resources */,
+				DF75F4F4D81C6C3778953278 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +314,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E03A1DC2635893D000B3E5A /* Build configuration list for PBXNativeTarget "TessafoldTestTests" */;
 			buildPhases = (
+				7CA77FF6900753C45FB3361D /* [CP] Check Pods Manifest.lock */,
 				4E03A1C12635893D000B3E5A /* Sources */,
 				4E03A1C22635893D000B3E5A /* Frameworks */,
 				4E03A1C32635893D000B3E5A /* Resources */,
@@ -170,9 +333,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E03A1DF2635893D000B3E5A /* Build configuration list for PBXNativeTarget "TessafoldTestUITests" */;
 			buildPhases = (
+				B5013A68C0E50275E8261A05 /* [CP] Check Pods Manifest.lock */,
 				4E03A1CC2635893D000B3E5A /* Sources */,
 				4E03A1CD2635893D000B3E5A /* Frameworks */,
 				4E03A1CE2635893D000B3E5A /* Resources */,
+				87F01A86696AF661DE93D639 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,9 +396,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E03A24C263733E8000B3E5A /* CommentCell.xib in Resources */,
+				4E03A20C2635AEC0000B3E5A /* Posts.storyboard in Resources */,
 				4E03A1BF2635893C000B3E5A /* LaunchScreen.storyboard in Resources */,
 				4E03A1BC2635893C000B3E5A /* Assets.xcassets in Resources */,
-				4E03A1BA2635893A000B3E5A /* Main.storyboard in Resources */,
+				4E03A2182635AF06000B3E5A /* PostsCell.xib in Resources */,
+				4E03A2572637416C000B3E5A /* GeneralInformationCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +421,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7CA77FF6900753C45FB3361D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TessafoldTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87F01A86696AF661DE93D639 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TessafoldTest-TessafoldTestUITests/Pods-TessafoldTest-TessafoldTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TessafoldTest-TessafoldTestUITests/Pods-TessafoldTest-TessafoldTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TessafoldTest-TessafoldTestUITests/Pods-TessafoldTest-TessafoldTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5013A68C0E50275E8261A05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TessafoldTest-TessafoldTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF75F4F4D81C6C3778953278 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TessafoldTest/Pods-TessafoldTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TessafoldTest/Pods-TessafoldTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TessafoldTest/Pods-TessafoldTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F932CD0336EBA6D77E873CE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TessafoldTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E03A1AB2635893A000B3E5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E03A1B72635893A000B3E5A /* ViewController.swift in Sources */,
+				4E03A2412636090B000B3E5A /* PostDetailsViewModel.swift in Sources */,
+				4E03A2112635AEEE000B3E5A /* PostsViewController.swift in Sources */,
+				4E03A21D2635AF15000B3E5A /* PostViewModel.swift in Sources */,
+				4E03A2012635AE5C000B3E5A /* Extensions.swift in Sources */,
 				4E03A1B32635893A000B3E5A /* AppDelegate.swift in Sources */,
 				4E03A1B52635893A000B3E5A /* SceneDelegate.swift in Sources */,
+				4E03A1F226358A20000B3E5A /* Models.swift in Sources */,
+				4E03A2562637416C000B3E5A /* GeneralInformationCell.swift in Sources */,
+				4E03A2172635AF06000B3E5A /* PostsCell.swift in Sources */,
+				4E03A1F826359E23000B3E5A /* ServiceManager.swift in Sources */,
+				4E03A2262635B071000B3E5A /* NetworkServiceManager.swift in Sources */,
+				4E03A22F2635F72E000B3E5A /* PostDetailsViewController.swift in Sources */,
+				4E03A24B263733E8000B3E5A /* CommentCell.swift in Sources */,
+				4E03A26326374C79000B3E5A /* LocalDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +550,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E03A27B26380040000B3E5A /* PostDetailsTest.swift in Sources */,
 				4E03A1CA2635893D000B3E5A /* TessafoldTestTests.swift in Sources */,
+				4E03A2762637F424000B3E5A /* PostsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +580,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4E03A1B82635893A000B3E5A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4E03A1B92635893A000B3E5A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4E03A1BD2635893C000B3E5A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +709,7 @@
 		};
 		4E03A1DA2635893D000B3E5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52281F849DA30CE0C01A08F0 /* Pods-TessafoldTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,7 +720,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.essafoldTest.TessafoldTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TessafoldTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,6 +729,7 @@
 		};
 		4E03A1DB2635893D000B3E5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8595840A3C2CD5FF4BA434E9 /* Pods-TessafoldTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,7 +740,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.essafoldTest.TessafoldTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TessafoldTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,6 +749,7 @@
 		};
 		4E03A1DD2635893D000B3E5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 230289BAA51FDA959C233D97 /* Pods-TessafoldTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +772,7 @@
 		};
 		4E03A1DE2635893D000B3E5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 990393DE8202BB836379F891 /* Pods-TessafoldTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +795,7 @@
 		};
 		4E03A1E02635893D000B3E5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63CE2751FDEAFB20664CDBDF /* Pods-TessafoldTest-TessafoldTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +816,7 @@
 		};
 		4E03A1E12635893D000B3E5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CBCC8419FD0AF8A2E24742 /* Pods-TessafoldTest-TessafoldTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
