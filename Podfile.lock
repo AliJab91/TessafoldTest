@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.4.3)
+  - ReactiveSwift (6.6.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - ReactiveSwift
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ReactiveSwift
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  ReactiveSwift: be9407e2aaf8a11e53a5229255693cffd9a63ccf
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 4b9e1c528263349786b968956676f38068347447
+
+COCOAPODS: 1.10.1
