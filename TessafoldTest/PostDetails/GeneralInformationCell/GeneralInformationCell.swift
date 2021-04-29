@@ -17,22 +17,12 @@ class GeneralInformationCell: UITableViewCell {
             setPostUI()
         }
     }
-    var user: User? {
-        didSet {
-            setUsersUI()
-        }
-    }
     
     func setPostUI() {
         if let post = post {
             postTitleLabel.text = post.title
             postBodyLabel.text = post.body
-        }
-    }
-    
-    func setUsersUI() {
-        if let usersName = user?.name {
-            usersNameLabel.text = "Users name: \(usersName)"
+            usersNameLabel.text = post.userName
         }
     }
     

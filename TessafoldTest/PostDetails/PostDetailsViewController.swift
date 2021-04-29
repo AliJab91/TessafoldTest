@@ -32,13 +32,6 @@ class PostDetailsViewController: UIViewController {
         tableView.register(UINib(nibName: "CommentCell", bundle: nil), forCellReuseIdentifier: "CommentCell")
         tableView.register(UINib(nibName: "GeneralInformationCell", bundle: nil), forCellReuseIdentifier: "GeneralInformationCell")
         tableView.tableFooterView = UIView()
-        postDetailsViewModel.receivedUser.producer.startWithValues { [weak self] (value) in
-            guard let self = self else { return }
-            switch value {
-            case true: self.tableView.reloadData()
-            default: print("Error Message")
-            }
-        }
         postDetailsViewModel.receivedComments.producer.startWithValues { [weak self] (value) in
             guard let self = self else { return }
             switch value {
@@ -63,7 +56,6 @@ extension PostDetailsViewController: UITableViewDelegate, UITableViewDataSource 
         switch indexPath.row {
         case 0:
             generalInfoCell?.post = postDetailsViewModel.selectedPost
-            generalInfoCell?.user = postDetailsViewModel.user
             return generalInfoCell!
         default:
             cell?.comment = postDetailsViewModel.getCommentByIndex(index: indexPath.row)
