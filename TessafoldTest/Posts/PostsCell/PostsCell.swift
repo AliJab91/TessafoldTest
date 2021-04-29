@@ -11,6 +11,7 @@ class PostsCell: UITableViewCell {
 
     @IBOutlet weak var postTitleLabel: UILabel!
     @IBOutlet weak var postIdLabel: UILabel!
+    @IBOutlet weak var userNameLabel: UILabel!
     var post: Posts? {
         didSet {
             fillUI()
@@ -25,6 +26,7 @@ class PostsCell: UITableViewCell {
         if let post = post, let id = post.id, let title = post.title {
             postIdLabel.text = "Post id: \(String(id))" 
             postTitleLabel.text = title
+            userNameLabel.text = post.userName
         }
     }
 

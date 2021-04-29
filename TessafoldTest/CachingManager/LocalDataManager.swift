@@ -15,8 +15,8 @@ public class LocalDataManager {
     private let encoder = JSONEncoder()
     private let userDefaults = UserDefaults.standard
     
-    public func savePosts(comments: [Posts]) throws {
-        let data = try encoder.encode(comments)
+    public func savePosts(posts: [Posts]) throws {
+        let data = try encoder.encode(posts)
         userDefaults.set(data, forKey: postKey)
     }
     

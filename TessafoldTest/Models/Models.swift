@@ -12,6 +12,7 @@ public class Posts: Codable {
     let id: Int?
     let title: String?
     let body: String?
+    var userName: String = ""
     init (with json: [String: Any]) {
         userId = json["userId"] as? Int
         id = json["id"] as? Int

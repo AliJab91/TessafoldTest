@@ -23,6 +23,10 @@ class PostsViewController: UIViewController {
             guard let self = self else { return }
             self.tableView.reloadData()
         }
+        postsViewModel.receivedPosts.producer.startWithValues {[weak self] (posts) in
+            guard let self = self else { return }
+            self.tableView.reloadData()
+        }
     }
     
     /// Mark: presenting the details View + passing data to the viewModel
