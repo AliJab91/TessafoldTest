@@ -20,7 +20,7 @@ class PostsViewModel: NSObject {
         super.init()
         self.getPosts()
     }
-    
+    /// Mark: check if posts are saved locally, else load from API
     func getPosts() {
         do {
             try self.posts = localDataManager.loadPosts()
@@ -30,6 +30,7 @@ class PostsViewModel: NSObject {
         }
     }
     
+    /// Mark: Getting posts from the API, and save them locally
     func getpostsFromAPI() {
         NetworkServiceManager.sharedInstance.getPosts {[weak self] (results) in
             guard let self = self else { return }
@@ -42,11 +43,11 @@ class PostsViewModel: NSObject {
             }
         }
     }
-    
+    /// Mark: getting number of rows
     func getNumberOfRows() -> Int {
         return posts.count
     }
-    
+    /// Mark: getting Post object by index path
     func getPostForIndexPath(index: Int) -> Posts {
         return posts[index]
     }

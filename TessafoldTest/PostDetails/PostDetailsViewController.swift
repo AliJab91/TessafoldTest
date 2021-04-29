@@ -22,10 +22,12 @@ class PostDetailsViewController: UIViewController {
         return vc
     }
     
+    /// screen back button tapped
     @IBAction func dismissTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
+    /// Mark: setting UI configurations
     func setUI() {
         tableView.register(UINib(nibName: "CommentCell", bundle: nil), forCellReuseIdentifier: "CommentCell")
         tableView.register(UINib(nibName: "GeneralInformationCell", bundle: nil), forCellReuseIdentifier: "GeneralInformationCell")
@@ -47,6 +49,7 @@ class PostDetailsViewController: UIViewController {
     }
 }
 
+/// Mark: tableView data source and delefate functions
 extension PostDetailsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return postDetailsViewModel.numberOfRows()

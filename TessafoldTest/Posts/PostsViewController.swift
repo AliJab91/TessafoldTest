@@ -15,7 +15,7 @@ class PostsViewController: UIViewController {
         super.viewDidLoad()
         setUI()
     }
-    
+    /// Mark: setting the UI + triggering RX for new data recieve
     func setUI() {
         tableView.register(UINib(nibName: "PostsCell", bundle: nil), forCellReuseIdentifier: "PostsCell")
         tableView.tableFooterView = UIView()
@@ -25,6 +25,7 @@ class PostsViewController: UIViewController {
         }
     }
     
+    /// Mark: presenting the details View + passing data to the viewModel
     func presentDetailsView(post: Posts) {
         let detailsViewModel = PostDetailsViewModel()
         detailsViewModel.selectedPost = post
@@ -34,6 +35,7 @@ class PostsViewController: UIViewController {
     }
 }
 
+/// Mark: tableView delegate and datasource functions
 extension PostsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return postsViewModel.getNumberOfRows()
